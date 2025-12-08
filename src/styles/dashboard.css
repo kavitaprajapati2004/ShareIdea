@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: flex;
+  padding: 20px 40px;
+  gap: 20px;
+}
+.sidebar, .rightbar {
+  width: 20%;
+  background: #e2e8f0;
+  padding: 20px;
+  border-radius: 14px;
+  height: 85vh;
+}
+
+.feed {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

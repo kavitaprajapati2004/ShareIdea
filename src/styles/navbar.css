@@ -1,0 +1,46 @@
+.navbar {
+  width: 100%;
+  background: #1E3A8A;
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin: 0 14px;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.add-btn {
+  background: #16a34a;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  background: #15803d;
+  transform: scale(1.04);
+}
+
+.page-container {
+  padding-top: 90px;  
+}
