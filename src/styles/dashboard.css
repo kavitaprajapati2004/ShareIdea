@@ -49,3 +49,6 @@
   flex-direction: column;
   gap: 20px;
 }
+.sidebar{
+  text-align: center;
+}
