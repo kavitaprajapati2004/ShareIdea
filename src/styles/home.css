@@ -1,6 +1,6 @@
 .home-container {
   display: flex;
-  padding: 60px 90px;
+  padding: 20px;
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to right, #e0ecff, #ffffff);

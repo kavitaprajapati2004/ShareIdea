@@ -1,0 +1,14 @@
+.all-ideas-container {
+  padding: 20px;
+}
+
+.all-ideas-container h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}

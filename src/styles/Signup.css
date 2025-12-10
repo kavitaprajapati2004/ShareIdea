@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-/* LEFT */
+
 .left-side {
   width: 50%;
   background: linear-gradient(135deg, #1E3A8A, #3B82F6);
@@ -17,7 +17,6 @@
   text-align: center;
 }
 
-/* RIGHT */
 .right-side {
   width: 50%;
   display: flex;
@@ -50,4 +49,5 @@
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
+  border: none;
 }

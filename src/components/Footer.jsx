@@ -1,44 +1,56 @@
-// import React from "react";
-// import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-// import "../styles/Footer.css";
+import React from "react";
+import "../styles/Footer.css";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io";
 
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <div className="footer-top">
-//         <div className="footer-about">
-//           <h3>IdeaHub</h3>
-//           <p>Share, Learn and Build Together with Students</p>
-//         </div>
+export default function Footer() {
 
-//         <div className="footer-links">
-//           <h4>Quick Links</h4>
-//           <ul>
-//             <li><a href="/">Home</a></li>
-//             <li><a href="/dashboard">Dashboard</a></li>
-//             <li><a href="/add-idea">Add Idea</a></li>
-//             <li><a href="/login">Login</a></li>
-//           </ul>
-//         </div>
+  const link = "https://www.linkedin.com/in/kavita-julaniya-8298ab337/" 
+  const links = "https://github.com/" 
+  return (
+    <footer className="footer">
 
-//         <div className="footer-contact">
-//           <h4>Contact</h4>
-//           <p>Email: info@ideahub.com</p>
-//           <p>Phone: +91 12345 67890</p>
-//           <div className="social-icons">
-//             <a href="#"><FaFacebookF /></a>
-//             <a href="#"><FaTwitter /></a>
-//             <a href="#"><FaLinkedinIn /></a>
-//             <a href="#"><FaInstagram /></a>
-//           </div>
-//         </div>
-//       </div>
+      <div className="footer-container">
 
-//       <div className="footer-bottom">
-//         <p>© 2025 IdeaHub. All rights reserved.</p>
-//       </div>
-//     </footer>
-//   );
-// };
+        <div className="footer-section">
+          <h3>IdeaShare</h3>
+          <p>Share. Learn. Build with Students.</p>
+        </div>
 
-// export default Footer;
+        <div className="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Explore</a></li>
+            <li><a href="/addidea">Add Idea</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h4>Contact</h4>
+          <p>Email: support@ideashare.com</p>
+          <p>Phone: +91 98765 43210</p>
+        </div>
+
+        <div className="footer-section">
+          <h4>Follow Us</h4>
+          <div className="footer-section">
+
+  <div className="social-icons">
+
+    <a href={link}>< FaLinkedinIn  /></a>
+
+    <a href={links}><IoLogoGithub  /></a>
+  </div>
+</div>
+        </div>
+
+      </div>
+
+      <div className="footer-bottom">
+        © {new Date().getFullYear()} IdeaShare — All Rights Reserved.
+      </div>
+    </footer>
+  );
+}

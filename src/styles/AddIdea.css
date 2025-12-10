@@ -29,9 +29,12 @@ textarea {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  /* width: 50%; */
+  border: none;
 }
 
 .submit-btn:hover {
   background: #15803d;
   transform: scale(1.04);
 }
+

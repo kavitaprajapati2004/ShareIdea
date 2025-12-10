@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
 }
-/* LEFT */
+
 .left-side {
   width: 50%;
   background: linear-gradient(135deg, #1E3A8A, #3B82F6);
@@ -16,7 +16,6 @@
   text-align: center;
 }
 
-/* RIGHT */
 .right-side {
   width: 50%;
   display: flex;
@@ -27,7 +26,7 @@
 .login-box {
   width: 70%;
   padding: 30px;
-  background: white;
+  background: rgb(254, 253, 253);
   box-shadow: 0 0 10px #ccc;
   border-radius: 16px;
   text-align: center;
@@ -41,12 +40,13 @@
   border: 1px solid #ccc;
 }
 
-.login-btn {
+.login-Btn {
   width: 100%;
-  background: #1E3A8A;
+  background: #1743bc;
   color: white;
   padding: 14px;
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
+  border: none;
 }

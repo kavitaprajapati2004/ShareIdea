@@ -3,13 +3,45 @@
   padding: 20px 40px;
   gap: 20px;
 }
-.sidebar, .rightbar {
+
+.sidebar, 
+.rightbar {
   width: 20%;
   background: #e2e8f0;
   padding: 20px;
   border-radius: 14px;
   height: 85vh;
 }
+
+
+.sidebar h3,
+.rightbar h3 {
+  margin-bottom: 20px;
+}
+
+
+.sidebar a {
+  text-decoration: none !important;
+}
+
+
+.sidebar p {
+  margin: 12px 0;
+  padding: 10px 12px;
+  color: #333;
+  font-weight: 600;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+
+.sidebar p:hover {
+  background: #cbd5e1;
+}
+
 
 .feed {
   width: 60%;

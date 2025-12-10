@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  background: #1E3A8A;
+  background: #2f50ab;
   color: white;
   padding: 16px 40px;
   display: flex;
@@ -17,10 +17,18 @@
   letter-spacing: 1px;
 }
 
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;   
+}
+
 .nav-links a {
   text-decoration: none;
   color: white;
-  margin: 0 14px;
+  font-weight: 500;
   font-size: 16px;
   transition: 0.2s ease;
 }
@@ -30,17 +38,64 @@
 }
 
 .add-btn {
-  background: #16a34a;
-  padding: 8px 16px;
+  background: #08d453;
+  padding: 6px 16px;      
   border-radius: 6px;
+  color: white;
   font-weight: 600;
+  width: auto;            
+  white-space: nowrap;   
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .add-btn:hover {
-  background: #15803d;
+  background: #16a34a;
   transform: scale(1.04);
 }
 
-.page-container {
-  padding-top: 90px;  
+.logout-btn {
+  background: #ef4444;
+  padding: 6px 16px;      
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  width: auto;           
+  white-space: nowrap;     
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: scale(1.04);
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .add-btn, .logout-btn {
+    width: 100%;  
+  }
 }

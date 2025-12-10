@@ -7,9 +7,11 @@ export default function Home() {
       <div className="hero-left">
         <h1>Turn Your Ideas Into Reality</h1>
         <p>Share, Learn and Build Together with Students</p>
-        <Link to="/dashboard">
+        <Link to="/signup">
           <button className="get-started">Get Started</button>
         </Link>
+
+
       </div>
 
       <div className="hero-right">

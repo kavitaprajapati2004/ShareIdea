@@ -2,15 +2,16 @@
   padding: 20px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(49, 12, 233, 0.1);
   transition: 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .idea-card:hover {
   transform: translateY(-4px);
 }
 
-/* TAGS */
+
 .tags span {
   background: #e5e7eb;
   padding: 6px 12px;
@@ -18,16 +19,17 @@
   margin-right: 8px;
   font-size: 14px;
   font-weight: 500;
+  display: inline-block;
+  margin-top: 5px;
 }
 
-/* ACTION BUTTONS WRAPPER */
+
 .actions {
   margin-top: 12px;
   display: flex;
   gap: 10px;
 }
 
-/* COMMON BUTTON STYLE */
 .actions button {
   padding: 8px 16px;
   border: none;
@@ -44,29 +46,83 @@
   color: white;
 }
 .like:hover {
-  background: #1d4ed8;
+  background: #0632ac;
 }
 
 .comment {
-  background: #6b7280;
+ background: #2563eb;
   color: white;
 }
 .comment:hover {
-  background: #4b5563;
+  background: #0632ac;
 }
 
 .edit {
-  background: #facc15;
-  color: black;
+  background: #2563eb;
+  color: white;
 }
 .edit:hover {
-  background: #eab308;
+  background: #0632ac;
 }
 
 .delete {
-  background: #ef4444;
+  background: #2563eb;
   color: white;
 }
 .delete:hover {
-  background: #dc2626;
+  background: #0632ac;
+}
+
+
+.comment-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.comment-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-box button {
+  padding: 10px 16px;
+  background: rgb(8, 15, 224);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.comment-box button:hover {
+  background: hsl(246, 67%, 39%);
+}
+
+
+.comment-list {
+  margin-top: 15px;
+  background: #eaebf1;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.comment-item {
+  background: white;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border-left: 4px solid rgb(12, 34, 181);
+  font-size: 14px;
+}
+
+.no-comments {
+  color: rgb(161, 137, 233);
+  font-style: italic;
+  font-size: 14px;
 }
