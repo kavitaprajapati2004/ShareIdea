@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/Profile.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Profile() {
+  const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("currentUser"));
 
   const currentDate = new Date().toLocaleDateString("en-IN", {
@@ -27,8 +29,13 @@ export default function Profile() {
 
   return (
     <div className="profile-page">
-      <div className="profile-card">
 
+      <div className="back-wrapper">
+        <button className="back" onClick={() => navigate(-1)}>⬅ Back</button>
+      </div>
+
+
+      <div className="profile-card">
         <h1>Your Profile</h1>
 
         <img
@@ -58,7 +65,6 @@ export default function Profile() {
             <p className="profile-motivation">🌟 {randomLine}</p>
           </div>
         )}
-
       </div>
     </div>
   );

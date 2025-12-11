@@ -1,11 +1,13 @@
+/* MAIN CONTAINER */
 .signup-container {
   display: flex;
   height: 100vh;
+  width: 100%;
 }
 
-
+/* LEFT SIDE */
 .left-side {
-  width: 50%;
+  flex: 1;              /* width: 50% REMOVE */
   background: linear-gradient(135deg, #1E3A8A, #3B82F6);
   color: white;
   display: flex;
@@ -17,16 +19,20 @@
   text-align: center;
 }
 
+/* RIGHT SIDE */
 .right-side {
-  width: 50%;
+  flex: 1;             /* width: 50% REMOVE */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 20px;
 }
 
+/* BOX */
 .signup-box {
-  width: 70%;
-  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  padding: 28px;
   background: white;
   box-shadow: 0 0 10px #ccc;
   border-radius: 16px;
@@ -50,4 +56,42 @@
   margin-top: 20px;
   cursor: pointer;
   border: none;
+}
+
+
+
+/* -------------------------
+   RESPONSIVE MOBILE FIX
+-------------------------- */
+@media (max-width: 768px) {
+
+  .signup-container {
+    flex-direction: column;  /* Stack vertically */
+    height: auto;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100% !important;
+    flex: none;
+    padding: 25px;
+  }
+
+  .signup-box {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+/* EXTRA SMALL MOBILE */
+@media (max-width: 480px) {
+  .left-side {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .signup-box {
+    width: 95%;
+    padding: 20px;
+  }
 }

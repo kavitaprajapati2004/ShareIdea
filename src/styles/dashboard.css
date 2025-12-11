@@ -2,9 +2,11 @@
   display: flex;
   padding: 20px 40px;
   gap: 20px;
+  width: 100%;
 }
 
-.sidebar, 
+/* SIDEBAR + RIGHTBAR */
+.sidebar,
 .rightbar {
   width: 20%;
   background: #e2e8f0;
@@ -13,17 +15,14 @@
   height: 85vh;
 }
 
-
 .sidebar h3,
 .rightbar h3 {
   margin-bottom: 20px;
 }
 
-
 .sidebar a {
   text-decoration: none !important;
 }
-
 
 .sidebar p {
   margin: 12px 0;
@@ -37,18 +36,72 @@
   transition: 0.2s;
 }
 
-
 .sidebar p:hover {
   background: #cbd5e1;
 }
 
-
+/* FEED */
 .feed {
   width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: sticky;
+
 }
-.sidebar{
+
+.sidebar {
   text-align: center;
+}
+
+
+/* ----------------------------------------------------
+   RESPONSIVE DASHBOARD FIX (MOBILE + TABLETS)
+----------------------------------------------------- */
+@media (max-width: 992px) {
+  .dashboard-container {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .sidebar,
+  .rightbar {
+    width: 25%;
+  }
+
+  .feed {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;    /* Stack vertically */
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .sidebar,
+  .feed,
+  .rightbar {
+    width: 100% !important;    /* Full width */
+    height: auto;              /* Auto height */
+  }
+
+  .sidebar,
+  .rightbar {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  
+  .sidebar,
+  .feed,
+  .rightbar {
+    width: 100% !important;
+  }
 }

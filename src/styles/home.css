@@ -4,8 +4,10 @@
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(to right, #e0ecff, #ffffff);
+  flex-wrap: wrap;
 }
 
+/* ------------ Left Text ------------- */
 .hero-left h1 {
   font-size: 48px;
   font-weight: 800;
@@ -17,6 +19,7 @@
   margin-bottom: 30px;
 }
 
+/* ------------ Button ------------- */
 .get-started {
   background-color: #16a34a;
   color: white;
@@ -33,6 +36,7 @@
   transform: scale(1.05);
 }
 
+/* ------------ Right Image ------------- */
 .hero-right img {
   width: 350px;
   animation: floating 3s infinite ease-in-out;
@@ -42,4 +46,69 @@
   0% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
+}
+
+/* ====================================================
+   📱 MOBILE RESPONSIVE (0–480px)
+==================================================== */
+@media (max-width: 480px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 34px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .hero-right img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .get-started {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+}
+
+/* ====================================================
+   📱 TABLET RESPONSIVE (481–768px)
+==================================================== */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 40px;
+  }
+
+  .hero-right img {
+    width: 300px;
+    margin-top: 20px;
+  }
+}
+
+/* ====================================================
+   💻 LAPTOP (769–1200px)
+==================================================== */
+@media (max-width: 1200px) {
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-left p {
+    font-size: 18px;
+  }
+
+  .hero-right img {
+    width: 320px;
+  }
 }
