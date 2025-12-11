@@ -1,5 +1,5 @@
 import "../styles/Dashboard.css";
-import IdeaCard from "../components/IdeaCard";
+import IdeaCard from "../components/IdeaCard.jsx";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
