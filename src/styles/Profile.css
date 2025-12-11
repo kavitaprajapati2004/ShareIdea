@@ -20,6 +20,7 @@
   text-align: center;
   animation: fadeIn 0.4s ease;
   margin-bottom: 10px; 
+  margin-bottom: 20px;
 }
 
 .back-wrapper {
@@ -28,7 +29,9 @@
   justify-content: flex-start;
   padding-left: 20px;
   margin-top: 20px;
+  margin-bottom: 15px; 
 }
+
 
 .back {
   padding: 8px 15px;
